@@ -29,7 +29,6 @@
             </div>
             <div style="margin: 0px 10px; display: flex; align-items: center;">
                 <!-- <small style="color: white;">{{avatar.avatar}}</small> -->
-                <div class="Avatar" :style="`background-image: url( ${avatar.avatar} ); background-repeat: round;`"></div>
                 <dropdown/>
             </div>
         </div>

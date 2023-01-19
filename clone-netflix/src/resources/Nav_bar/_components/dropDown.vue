@@ -1,22 +1,49 @@
 <template>
-   
-
-    <div >
-        
-        <!-- <div class="Avatar" :style="`background-image: url( ${avatar.avatar} ); background-repeat: round;`"></div> -->
-        <select >
-        <option data-count="2" value="Alfa Romeo"></option>
-        <option data-count="23" value="Audi"></option>
-        <option data-count="433" value="BMW"></option>
-        <option data-count="45" value="Chrysler"></option>
-    </select>
-</div> 
+   <div>
+    
+    <nav>
+      <ul style="padding: 10px !important;" class="teste">
+        <li>
+          <button 
+            type="button" 
+            aria-haspopup="true" 
+            aria-expanded="true" 
+            aria-controls="dropdown1"  
+          >
+          <div style="display: flex; align-items: center;">
+            <input type="image" :src="`${avatar.avatar}`" alt="" width="50">
+            <span style="margin: 15px;" class="arrow"></span>   
+          </div>
+          </button>
+          <ul class="dropdown " id="dropdown1">
+            <div class="dropdown22">
+              <li><a href="#" style="color: white;">USER 1</a></li> 
+              <li><a href="#" style="color: white;">USER 2</a></li>
+              <li><a href="#" style="color: white;">USER 3</a></li>
+              <li><a href="#" style="color: white;">GERENCIAR PERFIS</a></li>
+              <li><a href="#" style="color: white;">Transferir perfil</a></li>
+              <li><a href="#" style="color: white;">Contra</a></li>
+              <li><a href="#" style="color: white;">Centrel de ajuda</a></li>
+            </div>
+            <div>
+              <hr color="white">
+            </div>
+            <div>
+              <ul>
+                <li><a href="#" style="color: white;">Sai da netflix</a></li>
+              </ul>
+            </div>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </template>
 <script >
 export default{
     data(){
         return{
-            
+          avatar: null
         }
     },
     mounted(){
@@ -27,7 +54,7 @@ export default{
     }
 }
 </script>
-<style>
+<style >
 /* .Avatar{
     border: none;
     border-radius: 4px;
@@ -41,157 +68,94 @@ export default{
     text-decoration: none;
     width: 10vw;
 } */
-body
-{
-  font-family: Open sans, Helvetica;
-  background: #111;
-  color: white;
-  font-size: 16px;
+
+
+ul li {
+   list-style: none;
+   font-size: 18px;
 }
 
-h1
-{
-  font-weight: lighter;
-}
-
-small
-{
-  color: firebrick;
-}
-
-div.checkbox_select
-{
-  width: 200px;
-}
-
-.checkbox_select_anchor
-{
-  display: block;
-  background: firebrick;
-  color: white;
-  cursor: pointer;
-  padding: 10px 5px 5px;
-  position: relative;
-}
-
-.checkbox_select_anchor:after
-{
-  width: 0; 
-	height: 0; 
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
-	border-top: 10px solid darkred;
-  content: "";
-  position: absolute;
-  right: 10px;
-  top: 15px;
-}
-
-.expanded .checkbox_select_anchor:after
-{
-	border-top: 0;
-	border-bottom: 10px solid firebrick;
-}
-
-
-.checkbox_select_anchor:hover
-{
-  background: #FF3030 !important;
-}
-
-.expanded .checkbox_select_anchor
-{
-    background: #7C1818;
-}
-
-div.checkbox_select .select_input
-{
-    width: 100%;
+ul li button {
+    font-size: inherit;
+    border: none;
+    background-color: transparent;
     cursor: pointer;
+    width: 100%;
 }
 
-.checkbox_select_dropdown
-{
-    display: none;
-    background: whitesmoke;
+ul li a {
+   display: block;
+   color: inherit;
+   text-decoration: none;
 }
 
-.checkbox_select_dropdown.show
-{
-    display: block;
-}
+/* toggle main dropdown */
 
-.checkbox_select_dropdown ul
-{
-    max-height: 150px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    padding: 0;
-  margin: 0;
-      border: 1px solid #999;
-  border-top: 0;
-  border-bottom: 0;
+.dropdown {
+  height: 0;
+  overflow: hidden;
+  transition: height ease 0.2s;
 }
-.checkbox_select_dropdown ul li
-{
-    list-style: none;
-    position: relative;
-    color: #666;
+.dropdown22 {
+padding: 15px !important;
 }
-.checkbox_select_dropdown ul li label
-{
-  position: relative;
-      padding: 10px 5px 5px 40px;
-     display: block;
-  cursor: pointer;
-}
-.checkbox_select_dropdown ul li label:hover
-{
-  background: #cbcbcb;
-  color: white;
-}
-.checkbox_select_dropdown ul li input:checked + label
-{
-  background: #bbb;
-  color: white;
-  text-shadow: 0px 1px 1px rgba(150, 150, 150, 1);
-}
-.checkbox_select_dropdown ul li input
-{
-  position: absolute;
-  left:0;
-  z-index:1;
+.arrow {
+  width: 0.5em;
+  height: 0.5em;
   display: inline-block;
-  height: 100%;
-  width: 30px;
-}
-.checkbox_select_search
-{
-    width: 200px;
-    padding: 10px 5px 5px;
-    border: 1px solid #999;
-      border-top: 0;
-    -webkit-box-sizing: border-box;
-	  -moz-box-sizing: border-box;
-	  box-sizing: border-box;
+  vertical-align: middle;
+  border-left: 0.15em solid currentColor;
+  border-bottom: 0.15em solid currentColor;
+  transform: rotate(-45deg);
+  transition: transform 100ms ease-in-out;
 }
 
-.checkbox_select_submit
-{
-    background: #00A600;
-    color: white;
-    padding: 10px 5px 5px;
-    border: 0;
-    width: 100%;
-    font-size: 14px;
-    cursor: pointer;
+li:focus-within > button > .arrow {
+  transform: rotate(-225deg);
+  margin-top: 4px;
 }
 
-.hide
-{
+/* MEDIA QUERIES  */
+@media (min-width: 640px) {
+  
+  .header-content {
+    display: flex;
+  }
+  
+  label, input[type="checkbox"] {
     display: none;
+  }
+  
+  ul li {
+    position: relative;
+    font-size: 14px;
+  }
+  
+  ul li a:hover,
+  ul li button:hover {
+    background-color: #03030300;
+  }
+  
+  .dropdown {
+    position: absolute;
+    right: 0;
+    left: auto;
+    box-shadow: 0 10px 15px -3px rgba(46, 41, 51, 0.08),
+    0 4px 6px -2px rgba(71, 63, 79, 0.16);
+    z-index: 99;
+    min-width: 10rem;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+    border-radius: 0 0 0.5rem 0.5rem; 
+  }
+  
+  ul li:hover .dropdown {
+    height: 135px;
+  }
+  
+  ul li:hover > button > .arrow {
+    transform: rotate(-225deg);
+    margin-top: 4px;
+  }
 }
-
-
-
 </style>
