@@ -5,18 +5,20 @@
 </template>
 
 <script>
+// import {http} from '@/http/interceptor'
 export default {
-  name: 'App'
+  name: 'App',
+  watch: {
+      '$route' (to, from) {
+        // console.log(to)
+        document.title = to.meta.title || 'Seu site'
+      }
+    },
+    // mounted(){
+    //   console.log(http)
+    // }
 }
-</script>
 
+</script>
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>

@@ -1,0 +1,93 @@
+{ 
+  "Users": [
+    {
+      "id": 1,
+      "name": "Maria Lemos",
+      "avatar": "http://occ-0-1740-1123.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABQDPDwqgMOk-LaNEdnJ51yvoZ7TRT9pNN5AltW2QENVeXakvlVoCe7xwaOe_YK8egOmUXVTtzTf0WOlHxz9ApGjrI1OiYbBAMCtY.png?r=0a8",
+      "idioma": "Portugues",
+      "infantil": false,
+      "inicio_automatico": true,
+      "reproducao_automatico": false,
+      "titulo": "Leão",
+      "concluido": true,
+      "deletar": false
+    },
+    {
+      "id": 2,
+      "name": "Teste",
+      "avatar": "http://occ-0-1740-1123.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABdi6oYb6DJb1LndQWckgaXvrqqP3QURNa8Xngiq7wwFwDtWIg1otEuYKVxbYwS9c5clAI1_Bn7DuljwcvhfUzQu2_Y2v9y5P6t_n.png?r=e6e",
+      "idioma": "",
+      "infantil": false,
+      "inicio_automatico": true,
+      "reproducao_automatico": false,
+      "titulo": null,
+      "concluido": true,
+      "deletar": false
+    }
+  ],
+  "Avatars": [
+    {
+      "id": 1,
+      "categoria": "THE WITCHER",
+      "name": "Ciri",
+      "icone_avatar": "https://occ-0-1740-1123.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABbEkLrEdknbwlVXiN2HKmzKg0lXMpQ0lGK0m96ElmUm9EDhTcxO82cvT5XZ7bzfF_fU-_7BOt5K5E-N4p2iMJxrWxYyXsyQATA.png?r=1d8"
+    },
+    {
+      "id": 2,
+      "categoria": "THE WITCHER",
+      "name": "Yennefer",
+      "icone_avatar": "https://occ-0-1740-1123.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABayGPRPt6c0fuhx2PbLOX8Wn3XJpVXLY_u1DOAGUlOuXU-683sUl6ooZAn8Zi4qYPZAOOVdMkkSmlJJMd8b-d6alV4gkpCET3A.png?r=fea"
+    },
+    {
+      "id": 3,
+      "categoria": "THE WITCHER",
+      "name": "Jaskier",
+      "icone_avatar": "https://occ-0-1740-1123.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABXrRE5O5OtGU2ezzibp2zn5_b8oyxzzUpgTjFGPyfAnnWLJmds5JnRfqN9v66WqQzo0u1o7w7v0TWuiLd6jgSnLllvMdzHmBeg.png?r=ad4"
+    },
+    {
+      "id": 4,
+      "categoria": "THE WITCHER",
+      "name": "Bruxo",
+      "icone_avatar": "https://occ-0-1740-1123.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABdl-798oa_wUwa3wF5r3C5U7QEdEiIzW3J-QezwoMZGPbXthGOhpXyCRN8AWyKpPRdKcrRzwiYBgSAZunKN-Rk6eJyZfBl7qDPod.png?r=93c"
+    },
+    {
+      "id": 5,
+      "categoria": "PERDIDOS NO ESPACO",
+      "name": "John",
+      "icone_avatar": "https://occ-0-1740-1123.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABYuPXSKMDdE9EGwFpXUJjwzCuh45j5Pl6Y15N2vaLZZLrHlJe5jLG3z32rmo4AhjEIBFHHRFhv-p46SW92r_-ILNFteG9iLzJw.png?r=001"
+    },
+    {
+      "id": 6,
+      "categoria": "PERDIDOS NO ESPACO",
+      "name": "Maureen",
+      "icone_avatar": "https://occ-0-1740-1123.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABTSX4tpn99-6PVhXE_-oLR5K8daMCgyi3AyQjFHxVIijnglEd9KQoWLmPl_676tQLmHtnGqJ4BwMocqtlRnfkSRSMoBSK-dswA.png?r=db3"
+    },
+    {
+      "id": 7,
+      "categoria": "PERDIDOS NO ESPACO",
+      "name": "Judy",
+      "icone_avatar": "https://occ-0-1740-1123.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABQJ-yUYKdI1L26FzTzV6Jvz8QxzTmkRoHCcGWU7qW--BakDvHQc0DG-eXvTlWngk2lEY19N3_OoM8PWh1BdfbH7bneAuHaO98A.png?r=c1a"
+    },
+    {
+      "id": 8,
+      "categoria": "PERDIDOS NO ESPACO",
+      "name": "Penny",
+      "icone_avatar": "https://occ-0-1740-1123.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABTYbZlp5We_tDXyeRsisWSXLx1eGvEL92zWmb68oviTbbgkXIrnDpJDHvxebBVYcYehIR31tSIA27nc-NW5K24Oxes0drMXFew.png?r=8c0"
+    },
+    {
+      "id": 9,
+      "categoria": "PERDIDOS NO ESPACO",
+      "name": "Will",
+      "icone_avatar": "https://occ-0-1740-1123.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABQm8c6QHiweBZRJMaS5p1pNdRhR1BHDx0aiTHeLWwfiSnClZk_xjIvUiHF5uz2xC_fQZ4PsvXONIaZ9fun8x7Fm3abB8cgVndg.png?r=c3d"
+    },
+    {
+      "id": 10,
+      "categoria": "LUPIN",
+      "name": "Assane, o ladrão de casaca",
+      "icone_avatar": "https://occ-0-1740-1123.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABUO-7stYdIanN19fZ3O1CihszCYJgqYBtNRI0hk9Q_oNPqZ8rhQeLKLEmDUmb2MUkCQju4IdhG8J6E6J02aAQNQnxXjbA4QDNA.png?r=39d"
+    }
+  ],
+  "Avatars_History": [
+
+  ]
+}

@@ -1,0 +1,5 @@
+{
+    "scripts": {
+        "start": "npx json-server bd.json --watch --port 3333"
+    }
+}
